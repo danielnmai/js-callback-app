@@ -1,0 +1,32 @@
+<h2 id="first">Hello</h2>
+<h2 id="second">Goodbye</h2>
+<h2 id="third">Welcome</h2>
+<h2 id="fourth">Farewell</h2>
+<button onclick="changeColors()"> Start </button>
+<button onclick="getData()">Get Data</button>
+<p id="foodTrucks"></p>
+
+<div ng-app="app">
+  <div ng-controller="stuffCtrl">
+    <h1> {{ message }}</h1>
+   <!--  <h3> {{ task1 }} </h3>
+    <h3> {{ task2 }} </h3>
+    <h3> {{ task3 }} </h3>
+    <input ng-model="task3"> -->
+    <div id="tasks">
+      <h3>To do List</h3>
+      <li ng-repeat="task in tasks">{{ task }} <input ng-model="task"></li>
+      
+
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
